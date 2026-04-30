@@ -21,6 +21,7 @@ body{
 }
 .screen{
     display: none;
+    
 }
 .screen.active{
     background-color: white;
