@@ -21,6 +21,7 @@ body{
 }
 .screen{
     display: none;
+    
 }
 .screen.active{
     background-color: white;
@@ -28,7 +29,7 @@ body{
 }
 #start-screen{
      box-shadow: 3px 8px 6px 4px rgba(0, 0, 0, 20%);
-    background-color: #c9a190aa;
+    background-color: #bd8167aa;
     border-radius: 1rem;
     text-align: center;
     padding: 2.5rem;
@@ -38,7 +39,7 @@ body{
     margin: 1rem;
 }
 #start-screen p{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.6rem;
 }
 #start-screen button{
     border: 1px solid orange;
@@ -49,7 +50,7 @@ body{
 }
 #start-screen button:hover{
     cursor: pointer;
-    transition: all ease;
+    transition: all 3s ease;
     background-color: #ff530a;
     border: 2px solid orangered;
 }
@@ -80,20 +81,84 @@ body{
 .question-list{
     list-style: none;
     margin: 2rem 0;
-    line-height: 3.5rem;
+    line-height: 2.5rem;
       color: rgb(120, 75, 75);
     
 }
 
 .question-list  li {
     margin-bottom: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.7rem;
     padding: 0 0.5rem;
-    border: 1.5px solid red;
+    cursor: pointer;
+    background-color: #a0989865;
+   
   
 }
-.progress-bar{
-    width: 100%;
-    height: 1rem;
-    background-color: blue;
+
+.answer-btn:hover{
+   
+    background-color: #e7bc83b2;
+    border-color: #dac0ae;
 }
+.answer-btn.correct{
+     border: 1px solid;
+    color: #28a745;
+    background-color: #a3f0c4;;
+}
+.answer-btn.incorrect{
+     border: 1px solid;
+    color: inherit;
+    background-color: #eb3333a6;;
+}
+.progress-bar{
+    height: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.progress{
+    height: 100%;
+    width: 10%;
+     background-color: #e86a33;
+   
+}
+#result-screen{
+     box-shadow: 3px 8px 6px 4px rgba(0, 0, 0, 20%);
+    background-color: #c9a190aa;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+#result-screen h2{
+    color: var(--header-color);
+    margin-block: 1rem;
+
+}
+#result-screen p{
+    color: var(--header-color);
+    margin-block: 1rem;
+
+}
+.total-score ,.total-question{
+    font-weight: 500;
+    font-size: large;
+    color: rgb(104, 27, 156);
+    margin-block: 1rem;
+
+}
+.restart-btn{
+    margin-top: 3rem;
+     border: 1px solid orange;
+    width: 50%;
+   min-height: 40px;
+   border-radius: 1rem;
+    background-color: #e6794b;
+}
+.restart-btn:hover{
+    cursor: pointer;
+    transition: all 15ms ease-in-out;
+    background-color: #ff4d00;
+    border: 1px solid rgb(185, 78, 39);
+}
+    
