@@ -6,37 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer type="module"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="screen " id="start-screen">
+        <div class="screen active " id="start-screen">
             <h1> Quiz Time! </h1>
             <p>Test Your Knowledge with these fun question </p>
-            <button type="submit">Start Quiz</button>
+            <button id="start-btn">Start Quiz</button>
         </div>
         <div class="screen " id="quiz-screen">
-            <h3 class="quiz-header">What is your Name ?</h3>
+            <h3 class="quiz-header" id="question-name">What is your Name ?</h3>
             <div class="quiz-info">
-                <p>Question <span id="current-question">1</span> of <span id="total-question">5</span></p>
+                <p>Question <span id="current-question"></span> of <span id="total-question"></span></p>
                 <p>Score <span id="question-score">0</span></p>
             </div>
             <ul class="question-list" id="question-list">
-                <li class="answer-btn ">London</li>
-                <li class="answer-btn">Berlin</li>
-                <li class="answer-btn">Paris</li>
-                <li class="answer-btn ">Madrid</li>
+               
             </ul>
 
             <div class="progress-bar">
-                <div class="progress"></div>
+                <div class="progress" id="progress"></div>
             </div>
         </div>
 
 
     
 
-    <div class="screen active" id="result-screen">
+    <div class="screen " id="result-screen">
         <h2>Quiz Result</h2>
         <div class="result-info">
             <p> You scored
